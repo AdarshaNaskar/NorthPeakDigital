@@ -800,8 +800,8 @@ textarea:focus-visible,
 
 /* Secondary Glass Outline Button */
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.22);
     color: var(--text-main);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -809,8 +809,8 @@ textarea:focus-visible,
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.35);
     transform: translateY(-2px);
 }
 
@@ -3405,6 +3405,104 @@ input:focus-visible+.slider {
         font-size: var(--fs-base);
     }
 
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.875rem;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-trust-metrics {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .trust-text {
+        text-align: center;
+        font-size: 0.8125rem;
+    }
+
+    /* Executive Dashboard Interface Mobile Responsive Optimization */
+    .browser-viewport {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .browser-header {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .browser-url-bar {
+        max-width: 170px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 10px;
+    }
+
+    .browser-status-text {
+        display: none;
+    }
+
+    .dash-top-bar {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .dash-tabs {
+        overflow-x: auto;
+        white-space: nowrap;
+        max-width: 100%;
+        padding-bottom: 2px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .dash-kpi-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .dash-kpi-card {
+        padding: 8px 10px;
+    }
+
+    .dash-kpi-head {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .dash-kpi-title {
+        font-size: 9px;
+    }
+
+    .dash-trend {
+        font-size: 8.5px;
+        padding: 1px 4px;
+    }
+
+    .dash-kpi-val {
+        font-size: 12.5px;
+    }
+
+    .dash-kpi-sub {
+        font-size: 8px;
+    }
+
+    .dash-main-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .dash-card-header {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
     .testimonial-footer-row {
         flex-direction: column;
         align-items: flex-start;
@@ -3418,14 +3516,6 @@ input:focus-visible+.slider {
     .services-grid,
     .testimonials-grid,
     .pricing-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .dash-kpi-row {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .dash-main-grid {
         grid-template-columns: 1fr;
     }
 
@@ -3448,7 +3538,7 @@ input:focus-visible+.slider {
     }
 }
 
-/* Mobile Small (360px) */
+/* Mobile Small (480px and below) */
 @media (max-width: 480px) {
     :root {
         --space-16: 4rem;
@@ -3461,12 +3551,13 @@ input:focus-visible+.slider {
     }
 
     .hero-title {
-        font-size: 2.25rem;
+        font-size: 2.125rem;
     }
 
     .hero-actions {
         flex-direction: column;
         width: 100%;
+        gap: 0.75rem;
     }
 
     .hero-actions .btn {
@@ -3479,6 +3570,33 @@ input:focus-visible+.slider {
 
     .dash-kpi-row {
         grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .dash-kpi-card {
+        padding: 10px 12px;
+    }
+
+    .dash-kpi-head {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .dash-kpi-title {
+        font-size: 10.5px;
+    }
+
+    .dash-trend {
+        font-size: 9px;
+    }
+
+    .dash-kpi-val {
+        font-size: 15px;
+    }
+
+    .dash-kpi-sub {
+        font-size: 9px;
     }
 }
 
