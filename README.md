@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 NorthPeak Digital
 
 A premium, enterprise-inspired digital agency landing page built with **HTML5, CSS3, and Vanilla JavaScript**. The project showcases modern UI/UX principles, responsive design, accessibility, and frontend performance optimization with a clean, framework-free architecture.
@@ -153,3 +154,5 @@ AI tools were used to assist with brainstorming, documentation, UI refinement, o
 ---
 
 ⭐ If you like this project, consider giving it a star!
+=======
+>>>>>>> 782e2f3 (Updated)
